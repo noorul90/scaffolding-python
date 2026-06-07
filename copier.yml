@@ -59,12 +59,14 @@ _exclude:
   - "*.sln"
   - "*.sw?"
   - copier.yml
-  - execute_main.py
+  - run_main.py
+  - uv.lock
+  - .copier
 
 _answers_file: .copier/_copier_conf.answers_file.yml
 
 # _answers_file: ".copier-answers.yml"
-_subdirectory: app
+# _subdirectory: app
 
 # _tasks:
 #   - ["{{ _copier_python }}", .copier/update_dotenv.py]

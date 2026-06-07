@@ -62,8 +62,10 @@ _exclude:
   - run_main.py
   - uv.lock
   - .copier
+  - validate_copier_pydantic.py
 
 _answers_file: .copier/_copier_conf.answers_file.yml
+
 
 # _answers_file: ".copier-answers.yml"
 # _subdirectory: app

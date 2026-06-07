@@ -1,0 +1,71 @@
+# questions
+project_name:
+    type: str
+    help: What is your project name?
+    default: python-test-project
+
+skeleton_name:
+    type: str
+    help: What is your skeleton name?
+    default: fast-api-project
+
+module_name:
+    type: str
+    help: What is your Python module name?
+    default: test-module
+
+version:
+    type: str
+    help: What is your project version?
+    default: 0.1.0
+
+api_version:
+    type: str
+    help: What is your api version?
+    default: v1
+
+_exclude:
+  # Global
+  - .vscode
+  - .mypy_cache
+  # Python
+  - __pycache__
+  - app.egg-info
+  - "*.pyc"
+  - .mypy_cache
+  - .coverage
+  - htmlcov
+  - .cache
+  - .venv
+  # Frontend
+  # Logs
+  - logs
+  - "*.log"
+  - npm-debug.log*
+  - yarn-debug.log*
+  - yarn-error.log*
+  - pnpm-debug.log*
+  - lerna-debug.log*
+  - node_modules
+  - dist
+  - dist-ssr
+  - "*.local"
+  # Editor directories and files
+  - .idea
+  - .DS_Store
+  - "*.suo"
+  - "*.ntvs*"
+  - "*.njsproj"
+  - "*.sln"
+  - "*.sw?"
+  - copier.yml
+  - execute_main.py
+
+_answers_file: .copier/_copier_conf.answers_file.yml
+
+# _answers_file: ".copier-answers.yml"
+_subdirectory: app
+
+# _tasks:
+#   - ["{{ _copier_python }}", .copier/update_dotenv.py]
+
